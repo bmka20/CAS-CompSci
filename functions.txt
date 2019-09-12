@@ -1,0 +1,5 @@
+i)the definition of a function within swift is comprised into the keyword func
+ii)you indicate it with return and then followed by an arrow. Then you put what type of return after the arrow.
+iii)if you give an argument label a unique name it can be easier to comprehend for another user. Argument labels have no power and don't change the code in anyway, they're there for decoration and to make the code more readable.
+
+ 
