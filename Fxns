@@ -1,0 +1,38 @@
+import UIKit
+
+var str = "Hello, playground"
+
+func square(number: Int) -> Int {
+    return number * number
+}
+func square() -> Int {
+    return 3
+}
+print(square(number:3))
+
+func five() -> Int{
+    return 5
+}
+print(five())
+
+func fullName(first: String, last: String) -> String{
+    return first + " " + last
+}
+print(fullName(first: "Brandon", last: "Adiele"))
+
+func shout(words: String) -> String{
+    return words + "!"
+}
+print(shout(words: "Brandon is awesome"))
+
+func numberName(spell number: Int) -> String {
+    let numberSpelled: [String] = ["zero", "one", "two"]
+    if (1 < number && number < 3) {
+        return numberSpelled[number]
+    } else {
+        return "nil"
+    }
+}
+
+print(numberName(spell: 2))
+print(numberName(spell: 24))
