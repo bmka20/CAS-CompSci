@@ -1,0 +1,604 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DF871E2238848EF00EDE8AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF871E1238848EF00EDE8AB /* AppDelegate.swift */; };
+		1DF871E4238848EF00EDE8AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF871E3238848EF00EDE8AB /* ViewController.swift */; };
+		1DF871E7238848EF00EDE8AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DF871E5238848EF00EDE8AB /* Main.storyboard */; };
+		1DF871EA238848EF00EDE8AB /* IceCreamPicker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1DF871E8238848EF00EDE8AB /* IceCreamPicker.xcdatamodeld */; };
+		1DF871EC238848F600EDE8AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DF871EB238848F600EDE8AB /* Assets.xcassets */; };
+		1DF871EF238848F600EDE8AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DF871ED238848F600EDE8AB /* LaunchScreen.storyboard */; };
+		1DF871FA238848F700EDE8AB /* IceCreamPickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF871F9238848F700EDE8AB /* IceCreamPickerTests.swift */; };
+		1DF87205238848F700EDE8AB /* IceCreamPickerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF87204238848F700EDE8AB /* IceCreamPickerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1DF871F6238848F700EDE8AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1DF871D6238848EF00EDE8AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1DF871DD238848EF00EDE8AB;
+			remoteInfo = IceCreamPicker;
+		};
+		1DF87201238848F700EDE8AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1DF871D6238848EF00EDE8AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1DF871DD238848EF00EDE8AB;
+			remoteInfo = IceCreamPicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1DF871DE238848EF00EDE8AB /* IceCreamPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IceCreamPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF871E1238848EF00EDE8AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1DF871E3238848EF00EDE8AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1DF871E6238848EF00EDE8AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1DF871E9238848EF00EDE8AB /* IceCreamPicker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = IceCreamPicker.xcdatamodel; sourceTree = "<group>"; };
+		1DF871EB238848F600EDE8AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1DF871EE238848F600EDE8AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1DF871F0238848F600EDE8AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DF871F5238848F700EDE8AB /* IceCreamPickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IceCreamPickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF871F9238848F700EDE8AB /* IceCreamPickerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCreamPickerTests.swift; sourceTree = "<group>"; };
+		1DF871FB238848F700EDE8AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DF87200238848F700EDE8AB /* IceCreamPickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IceCreamPickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF87204238848F700EDE8AB /* IceCreamPickerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCreamPickerUITests.swift; sourceTree = "<group>"; };
+		1DF87206238848F700EDE8AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1DF871DB238848EF00EDE8AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DF871F2238848F700EDE8AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DF871FD238848F700EDE8AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1DF871D5238848EF00EDE8AB = {
+			isa = PBXGroup;
+			children = (
+				1DF871E0238848EF00EDE8AB /* IceCreamPicker */,
+				1DF871F8238848F700EDE8AB /* IceCreamPickerTests */,
+				1DF87203238848F700EDE8AB /* IceCreamPickerUITests */,
+				1DF871DF238848EF00EDE8AB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1DF871DF238848EF00EDE8AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1DF871DE238848EF00EDE8AB /* IceCreamPicker.app */,
+				1DF871F5238848F700EDE8AB /* IceCreamPickerTests.xctest */,
+				1DF87200238848F700EDE8AB /* IceCreamPickerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1DF871E0238848EF00EDE8AB /* IceCreamPicker */ = {
+			isa = PBXGroup;
+			children = (
+				1DF871E1238848EF00EDE8AB /* AppDelegate.swift */,
+				1DF871E3238848EF00EDE8AB /* ViewController.swift */,
+				1DF871E5238848EF00EDE8AB /* Main.storyboard */,
+				1DF871EB238848F600EDE8AB /* Assets.xcassets */,
+				1DF871ED238848F600EDE8AB /* LaunchScreen.storyboard */,
+				1DF871F0238848F600EDE8AB /* Info.plist */,
+				1DF871E8238848EF00EDE8AB /* IceCreamPicker.xcdatamodeld */,
+			);
+			path = IceCreamPicker;
+			sourceTree = "<group>";
+		};
+		1DF871F8238848F700EDE8AB /* IceCreamPickerTests */ = {
+			isa = PBXGroup;
+			children = (
+				1DF871F9238848F700EDE8AB /* IceCreamPickerTests.swift */,
+				1DF871FB238848F700EDE8AB /* Info.plist */,
+			);
+			path = IceCreamPickerTests;
+			sourceTree = "<group>";
+		};
+		1DF87203238848F700EDE8AB /* IceCreamPickerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1DF87204238848F700EDE8AB /* IceCreamPickerUITests.swift */,
+				1DF87206238848F700EDE8AB /* Info.plist */,
+			);
+			path = IceCreamPickerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1DF871DD238848EF00EDE8AB /* IceCreamPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DF87209238848F700EDE8AB /* Build configuration list for PBXNativeTarget "IceCreamPicker" */;
+			buildPhases = (
+				1DF871DA238848EF00EDE8AB /* Sources */,
+				1DF871DB238848EF00EDE8AB /* Frameworks */,
+				1DF871DC238848EF00EDE8AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IceCreamPicker;
+			productName = IceCreamPicker;
+			productReference = 1DF871DE238848EF00EDE8AB /* IceCreamPicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1DF871F4238848F700EDE8AB /* IceCreamPickerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DF8720C238848F700EDE8AB /* Build configuration list for PBXNativeTarget "IceCreamPickerTests" */;
+			buildPhases = (
+				1DF871F1238848F700EDE8AB /* Sources */,
+				1DF871F2238848F700EDE8AB /* Frameworks */,
+				1DF871F3238848F700EDE8AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1DF871F7238848F700EDE8AB /* PBXTargetDependency */,
+			);
+			name = IceCreamPickerTests;
+			productName = IceCreamPickerTests;
+			productReference = 1DF871F5238848F700EDE8AB /* IceCreamPickerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1DF871FF238848F700EDE8AB /* IceCreamPickerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DF8720F238848F700EDE8AB /* Build configuration list for PBXNativeTarget "IceCreamPickerUITests" */;
+			buildPhases = (
+				1DF871FC238848F700EDE8AB /* Sources */,
+				1DF871FD238848F700EDE8AB /* Frameworks */,
+				1DF871FE238848F700EDE8AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1DF87202238848F700EDE8AB /* PBXTargetDependency */,
+			);
+			name = IceCreamPickerUITests;
+			productName = IceCreamPickerUITests;
+			productReference = 1DF87200238848F700EDE8AB /* IceCreamPickerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1DF871D6238848EF00EDE8AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Brandon Adiele";
+				TargetAttributes = {
+					1DF871DD238848EF00EDE8AB = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					1DF871F4238848F700EDE8AB = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 1DF871DD238848EF00EDE8AB;
+					};
+					1DF871FF238848F700EDE8AB = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 1DF871DD238848EF00EDE8AB;
+					};
+				};
+			};
+			buildConfigurationList = 1DF871D9238848EF00EDE8AB /* Build configuration list for PBXProject "IceCreamPicker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1DF871D5238848EF00EDE8AB;
+			productRefGroup = 1DF871DF238848EF00EDE8AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1DF871DD238848EF00EDE8AB /* IceCreamPicker */,
+				1DF871F4238848F700EDE8AB /* IceCreamPickerTests */,
+				1DF871FF238848F700EDE8AB /* IceCreamPickerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1DF871DC238848EF00EDE8AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DF871EF238848F600EDE8AB /* LaunchScreen.storyboard in Resources */,
+				1DF871EC238848F600EDE8AB /* Assets.xcassets in Resources */,
+				1DF871E7238848EF00EDE8AB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DF871F3238848F700EDE8AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DF871FE238848F700EDE8AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1DF871DA238848EF00EDE8AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DF871EA238848EF00EDE8AB /* IceCreamPicker.xcdatamodeld in Sources */,
+				1DF871E4238848EF00EDE8AB /* ViewController.swift in Sources */,
+				1DF871E2238848EF00EDE8AB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DF871F1238848F700EDE8AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DF871FA238848F700EDE8AB /* IceCreamPickerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DF871FC238848F700EDE8AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DF87205238848F700EDE8AB /* IceCreamPickerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1DF871F7238848F700EDE8AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1DF871DD238848EF00EDE8AB /* IceCreamPicker */;
+			targetProxy = 1DF871F6238848F700EDE8AB /* PBXContainerItemProxy */;
+		};
+		1DF87202238848F700EDE8AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1DF871DD238848EF00EDE8AB /* IceCreamPicker */;
+			targetProxy = 1DF87201238848F700EDE8AB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1DF871E5238848EF00EDE8AB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DF871E6238848EF00EDE8AB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1DF871ED238848F600EDE8AB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DF871EE238848F600EDE8AB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DF87207238848F700EDE8AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1DF87208238848F700EDE8AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1DF8720A238848F700EDE8AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H8R86LP98Z;
+				INFOPLIST_FILE = IceCreamPicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.brandonadiele.IceCreamPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1DF8720B238848F700EDE8AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H8R86LP98Z;
+				INFOPLIST_FILE = IceCreamPicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.brandonadiele.IceCreamPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1DF8720D238848F700EDE8AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = IceCreamPickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.brandonadiele.IceCreamPickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IceCreamPicker.app/IceCreamPicker";
+			};
+			name = Debug;
+		};
+		1DF8720E238848F700EDE8AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = IceCreamPickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.brandonadiele.IceCreamPickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IceCreamPicker.app/IceCreamPicker";
+			};
+			name = Release;
+		};
+		1DF87210238848F700EDE8AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = IceCreamPickerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.brandonadiele.IceCreamPickerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IceCreamPicker;
+			};
+			name = Debug;
+		};
+		1DF87211238848F700EDE8AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = IceCreamPickerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.brandonadiele.IceCreamPickerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IceCreamPicker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DF871D9238848EF00EDE8AB /* Build configuration list for PBXProject "IceCreamPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DF87207238848F700EDE8AB /* Debug */,
+				1DF87208238848F700EDE8AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DF87209238848F700EDE8AB /* Build configuration list for PBXNativeTarget "IceCreamPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DF8720A238848F700EDE8AB /* Debug */,
+				1DF8720B238848F700EDE8AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DF8720C238848F700EDE8AB /* Build configuration list for PBXNativeTarget "IceCreamPickerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DF8720D238848F700EDE8AB /* Debug */,
+				1DF8720E238848F700EDE8AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DF8720F238848F700EDE8AB /* Build configuration list for PBXNativeTarget "IceCreamPickerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DF87210238848F700EDE8AB /* Debug */,
+				1DF87211238848F700EDE8AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1DF871E8238848EF00EDE8AB /* IceCreamPicker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1DF871E9238848EF00EDE8AB /* IceCreamPicker.xcdatamodel */,
+			);
+			currentVersion = 1DF871E9238848EF00EDE8AB /* IceCreamPicker.xcdatamodel */;
+			path = IceCreamPicker.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1DF871D6238848EF00EDE8AB /* Project object */;
+}
