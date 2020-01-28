@@ -1,0 +1,7 @@
+This app is a playlist of songs
+You can add the title of whatever song you like by clicking the plus button on the top left
+You can also delete whatever song you have added by clicking the edit button on the top right 
+You may also sort the songs in alphabetic order by clicking the sort button. Numbers and symbols go to the top. The first letter of each song must be capitalized for it to sort though
+The app saves for the most part by using the User Default class.
+The only flaw of this app is that it doesn't save the most recent song the user adds for some reason
+  For example: if the user inputs three songs or fills three cells with the string they wrote, the app only saves the first two songs of the three
