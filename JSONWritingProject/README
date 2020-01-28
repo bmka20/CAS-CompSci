@@ -1,0 +1,7 @@
+This app is a song playlist. 
+You can add the title of any song with the plus button on the top left. 
+You can also press the edit button on the top right of the application and then delete what ever song you want to remove from the playlist
+The sort button that's located on the top left of the application sorts all of the songs based on their value. The songs must start with a capital letter though.
+The app automatically saves for the most part because of the UserDefault class I used.
+The only problem with the app is that it doesn't save the last thing you input for some reason.
+  For example: if you added 3 songs, it'll only save the first 2 songs you added. 
