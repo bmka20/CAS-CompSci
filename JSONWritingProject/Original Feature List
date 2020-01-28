@@ -1,0 +1,8 @@
+The user can view a list of songs they want on their playlist
+The user can add and delete songs from the list on their playlist 
+The user can scroll down and see the list of their current playlist
+The list can be sorted alphabetically. 
+^Most important
+
+The user can add information to each song (length, release date, sales)
+The user can change how the list is sorted(song name, artist name, oldest/newest add)
