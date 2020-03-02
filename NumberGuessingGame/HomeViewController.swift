@@ -11,9 +11,13 @@ import UIKit
 class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     @IBOutlet weak var numberPicker: UIPickerView!
+    var numberOfButtons = 1
+    @IBOutlet weak var Light: UIButton!
+    @IBOutlet weak var Mid: UIButton!
+    @IBOutlet weak var Hard: UIButton!
     
-    let nums = (1...100).map{$0}
-    
+    var nums = (1...100).map{$0}
+    var vcType = 0
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -28,8 +32,10 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        let numberOfButtons = nums[row]
+        
+        numberOfButtons = nums[row]
     }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,23 +43,43 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         // Do any additional setup after loading the view.
     }
     
+    /*override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     if let vc = segue.destination as? ViewController, let sender = sender as? UIPickerView {
+     if sender == numberPicker {
+     vc.numberPicked = numberOfButtons
+     }
+     
+     }
+     
+     }
+     
+     */
+    
     /*
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let numberPicked = segue.destination as! ViewController
-        if let indexPath = self.numberPicker {
-            let theNumber = self.nums[indexPath.row]
+        if let numberVC = segue.destination as? ViewController, let sender = sender as? UIButton {
+            if sender == Light {
+                numberVC.checker = "Easy"
+            }
+            if sender == Mid {
+                numberVC.checker = "Medium"
+            }
+            if sender == Hard {
+                numberVC.checker = "Hard"
+            }
         }
+        
     }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
