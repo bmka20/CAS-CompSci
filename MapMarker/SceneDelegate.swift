@@ -2,8 +2,8 @@
 //  SceneDelegate.swift
 //  MapMarker
 //
-//  Created by Riley John Gibbs on 3/22/20.
-//  Copyright © 2020 Riley John Gibbs. All rights reserved.
+//  Created by Brandon Adiele on 3/23/20.
+//  Copyright © 2020 Brandon Adiele. All rights reserved.
 //
 
 import UIKit
