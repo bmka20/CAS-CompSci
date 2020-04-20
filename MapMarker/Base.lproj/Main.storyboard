@@ -15,7 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="TKG-Vo-zdw">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" rotateEnabled="NO" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TKG-Vo-zdw">
                                 <rect key="frame" x="0.0" y="94" width="414" height="679"/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8OX-QC-I1V">
@@ -44,7 +44,7 @@
                                     <action selector="zoomIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0C1-he-3aK"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It's Crossroads!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W6L-xc-tUT">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W6L-xc-tUT">
                                 <rect key="frame" x="0.0" y="44" width="414" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="iCw-gg-HQG"/>
@@ -79,11 +79,24 @@
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="barTintColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </toolbar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hQ6-ad-QSU">
+                                <rect key="frame" x="370" y="107" width="24" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="7ni-xh-zG3"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="location.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="currentPosition:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oFH-jT-wsD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="4Vg-YW-Occ" firstAttribute="leading" secondItem="8OX-QC-I1V" secondAttribute="trailing" id="1M7-aA-OTj"/>
+                            <constraint firstItem="hQ6-ad-QSU" firstAttribute="top" secondItem="W6L-xc-tUT" secondAttribute="bottom" constant="13" id="1jp-9p-KQ7"/>
                             <constraint firstItem="4Vg-YW-Occ" firstAttribute="width" secondItem="8OX-QC-I1V" secondAttribute="width" id="4WX-6Z-euW"/>
+                            <constraint firstItem="hQ6-ad-QSU" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="4lF-6Y-Muc"/>
                             <constraint firstItem="8OX-QC-I1V" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5Zi-Sc-h2c"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="W6L-xc-tUT" secondAttribute="trailing" id="8gL-xU-36a"/>
                             <constraint firstItem="8OX-QC-I1V" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="98A-el-5pc"/>
@@ -107,6 +120,7 @@
                             <constraint firstItem="4Vg-YW-Occ" firstAttribute="width" secondItem="8OX-QC-I1V" secondAttribute="width" id="sGZ-8S-OqU"/>
                             <constraint firstItem="8OX-QC-I1V" firstAttribute="top" secondItem="AFO-V9-Hae" secondAttribute="bottom" id="uty-Vr-z8X"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4Vg-YW-Occ" secondAttribute="trailing" id="wDa-Vf-19T"/>
+                            <constraint firstItem="hQ6-ad-QSU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="370" id="wgL-gL-cJs"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -121,6 +135,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="location.fill" catalog="system" width="64" height="56"/>
         <image name="minus.magnifyingglass" catalog="system" width="64" height="56"/>
         <image name="plus.magnifyingglass" catalog="system" width="64" height="56"/>
     </resources>
