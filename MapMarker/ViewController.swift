@@ -59,15 +59,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
     }
     
     func Zoom(_ exp: Double) {
-        /*
-        // Uses MKMapRect to create and set region
         let factor = pow(2, exp)
-        let rect = mapView.visibleMapRect
-        let newSize = MKMapSize(width: rect.width * factor, height: rect.height * factor)
-        let newRect = MKMapRect(origin: rect.origin, size: newSize)
-        mapView.setRegion(MKCoordinateRegion(rect), animated: true)
-        */
-        // Uses MKCoordinateSpan to create and set region
         let region = mapView.region
         let newLat = region.span.latitudeDelta * pow(2, exp)
         let newLong = region.span.longitudeDelta * pow(2, exp)
