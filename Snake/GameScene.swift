@@ -19,20 +19,50 @@ class GameScene: SKScene {
     var playerPositions: [(Int, Int)] = []
     var gameBG: SKShapeNode!
     var gameArray: [(node: SKShapeNode, x: Int, y: Int)] = []
+    var scorePos: CGPoint?
+    var FONT = "ArialRoundedMTBold"
     
     override func didMove(to view: SKView) {
         initializeMenu()
         game = GameManager(scene: self)
         initializeGameView()
-
+        
+        let swipeRight:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(swipeR))
+        swipeRight.direction = .right
+        view.addGestureRecognizer(swipeRight)
+        let swipeLeft:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(swipeL))
+        swipeLeft.direction = .left
+        view.addGestureRecognizer(swipeLeft)
+        let swipeUp:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(swipeU))
+        swipeUp.direction = .up
+        view.addGestureRecognizer(swipeUp)
+        let swipeDown:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(swipeD))
+        swipeDown.direction = .down
+        view.addGestureRecognizer(swipeDown)
     }
+    
+    @objc func swipeR() {
+        game.swipe(ID: .right) //3
+    }
+    @objc func swipeL() {
+        game.swipe(ID: .left) //1
+    }
+    @objc func swipeU() {
+        game.swipe(ID: .up) //2
+    }
+    @objc func swipeD() {
+        game.swipe(ID: .down) //4
+    }
+    
+    
     
     override func update(_ currentTime: TimeInterval) {
         // Called before each frame is rendered
+        game.update(time: currentTime)
     }
     
     private func initializeMenu(){
-        gameLogo = SKLabelNode(fontNamed: "ArialRoundedMTBold")
+        gameLogo = SKLabelNode(fontNamed: FONT)
         gameLogo.zPosition = 1
         gameLogo.position = CGPoint(x: 0, y: (frame.size.height / 2) - 200)
         gameLogo.fontSize = 60
@@ -40,10 +70,11 @@ class GameScene: SKScene {
         gameLogo.fontColor = SKColor.red
         self.addChild(gameLogo)
         //Create best score label
-        bestScore = SKLabelNode(fontNamed: "ArialRoundedMTBold")
+        bestScore = SKLabelNode(fontNamed: FONT)
         bestScore.zPosition = 1
         bestScore.position = CGPoint(x: 0, y: gameLogo.position.y - 50)
         bestScore.fontSize = 40
+        bestScore.text = "Best Score: \(UserDefaults.standard.integer(forKey: "bestScore"))"
         bestScore.text = "Best Score: 0"
         bestScore.fontColor = SKColor.white
         self.addChild(bestScore)
@@ -64,7 +95,7 @@ class GameScene: SKScene {
     }
     
     private func initializeGameView() {
-        currentScore = SKLabelNode(fontNamed: "ArialRoundedMTBold")
+        currentScore = SKLabelNode(fontNamed: FONT)
         currentScore.zPosition = 1
         currentScore.position = CGPoint(x: 0, y: (frame.size.height / -2) + 60)
         currentScore.fontSize = 40
@@ -72,8 +103,8 @@ class GameScene: SKScene {
         currentScore.text = "Score: 0"
         currentScore.fontColor = SKColor.white
         self.addChild(currentScore)
-        let width = frame.size.width - 200
-        let height = frame.size.height - 300
+        let width = Int(frame.size.width - 200)
+        let height = Int(frame.size.height - 235)
         let rect = CGRect(x: -width / 2, y: -height / 2, width: width, height: height)
         gameBG = SKShapeNode(rect: rect, cornerRadius: 0.02)
         gameBG.fillColor = SKColor.darkGray
@@ -81,7 +112,7 @@ class GameScene: SKScene {
         gameBG.isHidden = true
         self.addChild(gameBG)
         
-        createGameBoard(width: Int(width), height: Int(height))
+        createGameBoard(width: width, height: height)
     }
     
     private func createGameBoard(width: Int, height: Int) {
@@ -108,6 +139,7 @@ class GameScene: SKScene {
             y -= cellWidth
         }
     }
+    
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         for touch in touches {
