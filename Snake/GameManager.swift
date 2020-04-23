@@ -19,7 +19,7 @@ class GameManager {
     
     var scene: GameScene!
     var nextTime: Double?
-    var timeExtension: Double = 0.15
+    var timeExtension: Double = 0.25
     var playerDirection: Direction = .left
     var currentScore: Int = 0
     
@@ -54,7 +54,7 @@ class GameManager {
             let y = scene.playerPositions[0].1
             if Int((scene.scorePos?.x)!) == y && Int((scene.scorePos?.y)!) == x {
                 currentScore += 1
-                //timeExtension -= 0.2
+                timeExtension /= 2 //just by adding this line, it halfs the timeExtension/doubling the snake's speed when it eats the fruit.
                 scene.currentScore.text = "Score: \(currentScore)"
                 generateNewPoint()
                 scene.playerPositions.append(scene.playerPositions.last!)
@@ -84,7 +84,8 @@ class GameManager {
             let x = scene.playerPositions[0].0
             let y = scene.playerPositions[0].1
             if Int((scene.scorePos?.x)!) == y && Int((scene.scorePos?.y)!) == x {
-                timeExtension -= 0.15 //this subtracts from the double within the timeExtension variable. Thus, speeding up the snake.
+                //timeExtension -= 1.5 //this subtracts from the double within the timeExtension variable. Thus, speeding up the snake.
+                //^wasn't changing the speed, perhaps because it's too simlar to the checkForScore func.
             }
         }
     }
